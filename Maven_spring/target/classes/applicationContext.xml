@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+              http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-beans.xsd" >
+
+<!--    <bean id="user" class="Model.User">-->
+<!--        <property name="password" value="123456"></property>-->
+<!--        <property name="username" value="admin"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="user" class="Model.User">-->
+<!--        <constructor-arg name="password" value="123456"></constructor-arg>-->
+<!--        <constructor-arg name="username" value="admin"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="user" class="Model.User" p:password="123456" p:username="admin">-->
+<!--    </bean>-->
+
+<!--&lt;!&ndash;    通过有参构造创建&ndash;&gt;-->
+<!--    <bean id="userService" class="Service.UserService">-->
+<!--        <constructor-arg ref="userDAO"/>-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    通过无参数构造创建&ndash;&gt;-->
+<!--    <bean id="userDAO" class="DAO.UserImpl"></bean>-->
+
+
+
+<!--    <bean id="user" class="Model.User">-->
+<!--        <property name="username" value="admin"></property>-->
+<!--        <property name="password" value="123456"></property>-->
+<!--        <property name="book">-->
+<!--            <list>-->
+<!--                <value>英语</value>-->
+<!--                <value>数学</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="friend">-->
+<!--            <ref bean="friend"></ref>-->
+<!--        </property>-->
+<!--    </bean>-->
+<!--    <bean id="friend" class="Model.User"></bean>-->
+
+
+
+<!--开启组件扫描
+
+    扫描多个包用逗号隔开-->
+    <context:component-scan base-package="java"></context:component-scan>
+
+</beans>
